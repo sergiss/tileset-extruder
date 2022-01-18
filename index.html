@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tileset Extruder | www.sergiosoriano.com</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="resources/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Tileset Extruder</h1>
+      </header>
+
+      <main>
+        <div>
+          <input type="button" value="Open Tileset" id="open-tileset">
+        </div>
+        <div>
+        <img id="out-img" src="resources/images/image.png"></img>
+      </div>
+        <div>
+            <label class="input-label">Extrude</label>
+            <input type="number" id="extrude" min="0" value="2"/>
+        </div>
+        <div>
+        <input type="button" value="Save" id="save">
+        </div>
+      </main>
+
+      <footer><a href="https://github.com/sergiss/texture-extruder" target="_blank"><i class="fa">&#xf09b;</i> Source Code</a></footer>
+    </div>
+
+    <div class="modal">
+      <div class="modal-content">
+ 
+            <div class="controls">
+
+                <label class="input-button control">
+                    <input
+                      type="file"
+                      name="file"
+                      id="file"
+                      accept="image/*"
+                    />
+                    <span>Load Image</span>
+                </label>
+
+                <img class="control" src="resources/images/image.png" id="tileset-image"/>
+                
+                <div class="control" >
+                  <div>
+                      <label class="input-label">Columns</label>
+                      <input type="number" min="1" value="16" id="columns"/> 
+                  </div>     
+                  <div>
+                      <label class="input-label">Rows</label>
+                      <input type="number" min="1" value="16" id="rows"/>
+                  </div>  
+                </div>
+
+                <div class="control" >
+                  <input type="button" value="Accept" name="accept" id="accept"/>
+                  <input type="button" value="Cancel" name="cancel" id="cancel"/>
+                </div>
+           
+            </div>
+
+      </div>
+
+    </div>
+    <script src="resources/js/script.js"></script>
+  </body>
+</html>

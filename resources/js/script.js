@@ -13,7 +13,7 @@ const rows    = document.querySelector("#rows");
 
 document.querySelector("#open-tileset").addEventListener("click", () => {
   // Open modal
-  document.querySelector(".modal").style.display = "block";
+  document.querySelector(".modal").style.display = "flex";
 
   // Store current data
   tmp.tileset = tileset.src;
